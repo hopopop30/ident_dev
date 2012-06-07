@@ -1,0 +1,61 @@
+﻿body {
+}
+/*
+#content
+{
+    width: 1024px;
+    height: 530px;
+    float: left;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border: 1px solid grey;
+    background-color: White;
+}
+
+.menu
+{
+    width:600px;
+    height:100px;   
+    margin:auto;
+    margin-top:10px;
+}
+
+.menuImg
+{
+    float:left;
+    width:200px;
+    height:100px;   
+    position:relative;
+    z-index:2;
+}
+
+.menuImg hover
+{
+    cursor:auto;
+}
+*/
+.menu
+{
+    width:600px;
+    height:100px;   
+    margin:auto;
+    margin-top:10px;
+}
+
+.div_middle
+{
+    margin:auto;
+    text-align:center;
+    border:1px solid black;
+    width: 600px;
+    height: 100px;
+    margin-top: 100px;
+}
+
+.label_info
+{
+    
+}
+
+
+

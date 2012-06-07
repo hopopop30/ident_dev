@@ -1,0 +1,28 @@
+﻿body {
+}
+
+.menu
+{
+    width:200px;
+    height:100px;   
+    margin:auto;
+    margin-top:10px;
+}
+
+.div_middle
+{
+    margin:auto;
+    text-align:center;
+    width: 900px;
+    max-height: 400px;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+#label_Info{
+    
+    width: 900px;
+}
+
+
+

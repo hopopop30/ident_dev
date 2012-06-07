@@ -1,0 +1,91 @@
+body {
+}
+
+/*
+#content
+{
+    width: 1024px;
+    height: 530px;
+    margin-top: 10px;
+    float: left;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border: 1px solid grey;
+    background-color: White;
+}*/
+    .secondPlan
+    {
+        width:200px;
+        height:197px;
+        z-index: 0;
+        position: absolute;
+    }
+    .premierPlan
+    {
+        width:240px;
+        height:236px;
+        z-index: 1;
+        position: absolute;
+    }
+    
+    .secondPlan img
+    {
+        width:200px;
+        height:197px;
+        border:none;
+    }
+    .secondPlan a:hover img
+    {
+        margin-top: -2px;
+        margin-left: -2px;
+        width: 204px;
+        height: 201px;
+        z-index:2;
+    }
+        
+    .premierPlan img
+    {
+        width:240px;
+        height:236px; 
+        border:none;
+    }
+    .premierPlan a:hover img
+    {
+        margin-top: -2px;
+        margin-left: -2px;
+        width: 244px;
+        height: 240px;
+        z-index:2;
+    }
+
+        #div_galerie
+        {
+            margin-top: 10px;
+            margin-left: 590px;
+        }
+
+        #div_identification
+        {
+            margin-top: 140px;
+            margin-left: 390px;
+        }
+
+        #div_ajout
+        {
+            float: left;
+            margin-top: 310px;
+            margin-left: 230px;
+        }
+
+        #div_admin
+        {
+            float: right;
+            margin-top: 310px;
+            margin-left: 590px;
+        }
+        
+.icone
+{
+    width: 150px;
+    height: 150px;
+}        

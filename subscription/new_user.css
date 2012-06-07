@@ -1,0 +1,60 @@
+
+.menu
+{
+    width:600px;
+    height:100px;   
+    margin:auto;
+    margin-top:10px;
+}
+
+.div_droite
+{
+    float:right;
+    width:250px;
+    height: 300px;
+    margin-right: 100px;  
+    margin-top: 20px;
+    border: 1px solid grey;
+}
+
+#divFormInscription
+{
+    float:left;
+    margin-top: 20px;
+    margin-left: 100px;  
+    width:500px; 
+}
+
+.divMessageErreur
+{
+    text-align:center;
+    border: 1px solid red;
+    color: Red;
+}
+
+.div_photo
+{
+    float:left;
+    width: 230px;
+    height:230px;
+    margin-left: 10px;
+    /*background-color:yellow; */
+}
+
+.boutonTest
+{
+    float:left;
+    margin-top:10px;
+    margin-left:55px;
+}
+
+.img_photo
+{
+    float:left;
+    margin-bottom:0;
+    width: 230px;
+    height:230px;
+    z-index:2;
+}
+
+

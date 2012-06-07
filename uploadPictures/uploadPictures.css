@@ -1,0 +1,63 @@
+﻿body {
+}
+
+.menu
+{
+    width:400px;
+    height:100px;   
+    margin:auto;
+    margin-top:10px;
+}
+.div_middle
+{
+    margin:auto;
+    text-align:center;
+    border:1px solid black;
+    width: 600px;
+    height: 100px;
+    margin-top: 100px;
+}
+
+#divselectOrdre{
+    text-align: center;
+    margin-top: 20px;
+    height: 40px;
+}
+
+#divUpload{
+    float:left;
+    margin-left:50px;
+    
+}
+
+#custom-demo{
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+#divBlocDroit{
+    float:right;
+    margin-top:50px;
+    margin-right:150px;
+    
+}
+
+.label_info
+{
+    
+}
+
+#notification{
+    margin-top:300px;
+}
+.red{
+    color: red;
+    border: red solid 1px;
+}
+.green{
+    color: green;
+    border: green solid 1px;
+}
+
+
+

@@ -1,0 +1,73 @@
+
+.menu
+{
+    width:600px;
+    height:100px;   
+    margin:auto;
+    margin-top:10px;
+}
+
+
+.div_middle
+{
+    margin:auto;
+    text-align:center;
+    max-height: 410px;
+    margin-top: 70px;
+}
+.div_middle.Item1{width: 210px;}
+.div_middle.Item2{width: 410px;}
+.div_middle.Item3{width: 610px;}
+.div_middle.Item4{width: 810px;}
+
+
+    .div_middle a{
+        text-decoration:none;
+        color:indigo;
+    }
+
+    .div_elem{
+        float:left;
+        width: 179px;
+        height: 185px;
+        margin:10px;
+        border-radius: 10px;
+        border: grey 1px solid;
+    }
+        .div_elem img{
+            border:none;
+            width: 150px;
+            height:150px;
+        }
+/*
+#ordersList{
+    float:left;
+    margin-left:130px;
+    width: 740px;
+    height: 385px;
+    
+}
+    .div_order_item{
+        float:left;
+        width:170px;
+        height: 180px;
+        margin-top:10px;
+        margin-left:10px;
+        border-radius: 10px;
+        border: grey 1px solid;
+    }
+
+        .lien_order_item{
+            text-align: center;
+            text-decoration:none;
+            color:black;
+        }
+
+            .image_order_item{
+                width:150px;
+                height: 150px;
+                position: relative;
+                z-index: 1;
+            }
+
+*/

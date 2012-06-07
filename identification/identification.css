@@ -1,0 +1,126 @@
+
+.menu
+{
+    width:600px;
+    height:100px;   
+    margin:auto;
+    margin-top:10px;
+}
+
+#div_filtres{
+    float: left;
+    width:310px;
+    height: 25px;
+    margin-top:10px;
+    margin-left:133px;
+    /*border:1px solid black;
+    border-radius: 10px; */
+    padding-left:70px;
+    padding-top:2px;
+}
+#div_nav_photos{
+    float: left;
+    width:640px;
+    height: 260px;
+}
+
+    #notification_photo{
+        position:absolute;
+        margin-left: 75px;
+     }
+      
+    #divFlecheGauche{
+        float:left;
+        width:100px;
+        height: 250px;
+    }
+        #divFlecheGauche a{
+            border:none;
+        }
+        #divFlecheGauche img{
+            width:100px;
+            height:100px;
+            margin-top: 110px;
+            margin-left: 10px;
+            border:none;
+        }
+    #divImage{
+        float: left;
+        width:400px;
+        height: 260px;
+        margin-left:20px;
+        margin-top:10px;
+        border:1px solid black;
+        border-radius: 10px; 
+    }
+        #divImage img{
+            float: left;
+            width:380px;
+            height: 253px;
+            margin-left:10px;
+            margin-top:2px;
+            border:none;
+        }
+     #div_numero_photo{
+        position:absolute;
+        margin-left: 530px;
+     }
+    #divFlecheDroite{
+        float:left;
+        width:100px;
+        height: 250px;
+    }
+        #divFlecheDroite a{
+            border:none;
+        }
+            #divFlecheDroite img{
+                width:100px;
+                height:100px;
+                border:none;
+                margin-top: 110px;
+                margin-left: 10px;
+            }
+    #divInfoImage{
+        float: left;
+        width:320px;
+        height: 90px;
+        margin-top:20px;
+        margin-left:160px;
+        border:1px solid black;
+        border-radius: 10px; 
+    }
+
+#divIdentification{
+    float: right;
+    width:300px;
+    height: 315px;
+    /*border:1px solid black;
+    border-radius: 10px; */
+    margin-right: 70px;
+}
+
+#divTableauIdent{
+    float:left;
+    width:300px;
+}
+    #tabIdent{
+        margin-left:15px;
+        margin-top:10px;
+    }
+        .elemForm_Ident{
+            width:150px;
+            margin-right: 5px;
+            margin-top:3px;
+        }
+
+#divBoutValider{
+    float:right;
+    width:300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#divBoutValider input{
+    margin-left: 10px;
+}		
+	

@@ -1,0 +1,247 @@
+﻿body{ background-color: Black;}
+#image_fond
+{
+   position: absolute;
+   z-index: -1;
+}
+
+#div_header
+{
+    width:100%;
+    height: 100px;
+    float: left;
+}
+
+    #sub_header
+    {
+        font-size:1.1em;
+        font-weight: bolder;
+        font-family:Aharoni;
+        margin: auto;
+        width: 1024px;
+        margin-top: 20px;
+        height: 100%
+    }
+    
+        #user_icon
+        {
+            float: left;
+            width: 80px;
+            height: 80px;
+            border:1px solid white;   
+            position: relative;
+            margin-left: 20px;
+        }
+        #user_link
+        {
+            color: White;
+            width: 150px;
+            height:40px;
+            float: left;
+            margin-top: 5px;
+            margin-left:30px;
+        }
+        #user_link input
+        {
+            border: white solid 1px;
+        }/*
+        .lien_user{
+            
+            text-decoration: none;
+            text-shadow: 
+            white 1px 1px 1px, 
+            white -1px 1px 1px, 
+            white -1px -1px 1px, 
+            white 1px -1px 1px; 
+            color: black;
+        }*/
+        #barreseparation_user{
+            float:left;
+            margin-top:20px;
+            margin-left:10px;
+        }
+        #userInformations
+        {
+            color: White;
+            width: 400px;
+            height:40px;
+            float: left;
+            margin-top: 10px;
+            margin-left:20px;
+        }
+    
+            #userName
+            {
+                float: left;
+                width: 100%;
+                height: 30px;
+            }
+    
+            #userLocation
+            {
+                float: left;
+                width: 100%;
+                height: 30px;
+            }
+        
+        #otherInformations
+        {
+            color: White;
+            width: 200px;
+            height:40px;
+            float: right;
+            font-size:1.5em;
+            font-weight: bolder;
+            /*text-align: right;*/
+        }
+    
+            #hautGauche
+            {
+                float:left;
+                width: 79px;
+                margin-top:0px;
+            }
+            
+                #OI_line1
+                {
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                }
+    
+                #OI_line2
+                {
+                    float: left;
+                    width: 100px;
+                    height: 30px;
+                    padding-left: 15px;
+                    font-size:0.8em;
+                }
+            
+            #hautDroit
+            {
+                float: right;
+                width: 120px;
+            }
+            
+                #barreseparation
+                {
+                    float: left;
+                }
+                
+                #OI_line3
+                {
+                    margin-top: 15px;
+                    margin-right: 10px;
+                    float: right;
+                    width: 90px;
+                    height: 30px;
+                }
+
+#content_big 
+{
+    width:1024px;
+    margin:auto;
+}
+
+#div_footer
+{
+    width:100%;
+    height: 50px;
+    margin-top: 10px;
+    float: left;
+}
+
+    #sub_footer
+    {
+        width:800px;
+        height: 50px;
+        margin: auto;
+        /*border: 1px solid gray;*/
+    }#sub_footer a
+    {
+        color: orange;
+        margin-left: 140px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    
+    #version{
+        color:white;
+        font-size:0.6em;
+    }
+    
+.textColor
+{
+    color:Orange;   
+}
+
+.separationVerticale
+{
+    width: 2px;
+    height: 30px;
+    background-color: Orange;
+    border: 1px solid Orange;
+}
+
+.bouton{ 
+    border-bottom:0px;
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+    text-align:center;
+    /*background-color:orange;*/
+    background-color: #F37800;
+    background-repeat:no-repeat;
+    font-style:normal;
+    font-family:Tahoma;
+    font-weight:bold;
+    font-size:12px;
+    color:#333333;
+    cursor:pointer;
+    background-image:url(../content/images/boutons/136x25.png); 
+    width:136px;
+    height:25px;
+}
+.bouton:hover
+{
+   /* background-color:#F37800;*/
+   background-color: #E46C0A;
+}
+
+#content
+{
+    width: 1024px;
+    height: 530px;
+    float: left;
+    margin-top:10px;
+    /*-webkit-border-radius: 60px;*/
+    border-radius: 60px;
+    border: 1px solid grey;
+    background-color: White;   
+}
+
+#content img{
+    z-index: 1;
+    position:relative;
+}
+.menuImg
+{
+    float:left;
+    width:200px;
+    height:100px;   
+    position:relative;
+    z-index:2;
+}
+
+.menuImg hover
+{
+    cursor:auto;
+}
+
+#boutonBug{
+    border:1px solid white; 
+    float:right;
+    /*margin-top: 10px;*/
+    margin-right:10px;
+}

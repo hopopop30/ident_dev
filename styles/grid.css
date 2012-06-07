@@ -1,0 +1,52 @@
+/*------------------------------Tableau---------------------------------*/
+
+#table_header{
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 13px;
+    text-align: left;
+    width: 810px;
+    text-align: left;
+    margin:auto;
+}
+
+#table_header th {
+    border-bottom: 2px solid #444444;
+    color: #111111;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#table_header th {
+    border-bottom: 2px solid #444444;
+    color: #111111;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#table_central {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 13px;
+    text-align: left;
+    width: 810px;
+    text-align: left;
+    margin:auto;
+}
+#conteneur_table{
+    overflow-y: auto;
+    max-height:320px;
+}
+
+#table_central tbody tr:hover td {
+    color: #666666;
+}
+
+#table_central td {
+    color: #222222;
+}
+#table_central td img {
+    float:left;
+    width:25px;
+    height:25px;
+}
