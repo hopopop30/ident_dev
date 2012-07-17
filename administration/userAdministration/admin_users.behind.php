@@ -1,70 +1,35 @@
 <?php
     session_start();
-    include_once(dirname(__FILE__). "/../../core/presenters/administration/pictureAdministration/class.setOrderToPicture_Presenter.php");
+    include_once(dirname(__FILE__). "/../../core/presenters/administration/userAdministration/class.userAdministration_Presenter.php");
 
-    $pres = unserialize($_SESSION["setOrder_pres"]);
+    $pres = unserialize($_SESSION["useradmin_pres"]);
 
     //--Récupération de informations
-    if($_POST['nav'] == 'getAllBadPics'){
+    if($_POST['nav'] == 'modif'){
         
-        $pics = $pres->getPicturesWithoutOrder();
+        $id = $_POST['id'];
+        $login = $_POST['login'];
+        $email = $_POST['email'];
+        $nom = $_POST['nom'];
+        $prenom = $_POST['prenom'];
+        $site = $_POST['site'];
+        $dpt = $_POST['dep'];
+        $actif = $_POST['check'];
+        $admin = $_POST['check2'];
         
-        if($pics[0] == "aucune_image" ){
-            $retour = "aucune_image";
-        }else{
-            $retour = array(array());
-            $i = 0;
-            foreach ($pics as $pic) {
-                $dateExplode = explode(" ", $pic->getDatePriseVue());
-                $dateExplode2 = explode("-", $dateExplode[0]); //--Formattage date
-                $jour = $dateExplode2[2];
-                $mois = $dateExplode2[1];
-                $an = $dateExplode2[0];
-                $dateAffich = $jour."-".$mois."-".$an;
-
-                $retour[$i]['date'] = $dateAffich; 
-                $retour[$i]['util'] = $pic->getUtilisateur();
-                $retour[$i]['lieu'] = $pic->getLieu();
-                $retour[$i]['id'] = $pic->getId();
-                $retour[$i]['chem'] = $pic->getNomFichier();
-
-                $i++;
-            }
-        }
-        $_SESSION["setOrder_pres"] = serialize($pres);
-        echo json_encode($retour);
+        $pres->modifyUser($id, $login, $email, $nom, $prenom, $site, $dpt, $actif, $admin);
+        
+        $_SESSION["useradmin_pres"] = serialize($pres);
+        echo json_encode("Ok");
     }
     
     //--Suppression d'une image
-    if($_POST['nav'] == 'getAllOrders'){
+    if($_POST['nav'] == 'delete'){
         
-        $orders = $pres->getOrderList();
-        $retour = array(array());
+        $id = $_POST['id'];
+        $pres->deleteUser($id);
         
-        for($i = 0; $i < count($orders); $i++){
-            $retour[$i]['id'] = $orders[$i]->getId();
-            $retour[$i]['nom'] = $orders[$i]->getNom();
-        }
-
-        $_SESSION["setOrder_pres"] = serialize($pres);
-        echo json_encode($retour);
-    }
-    
-    //--Suppression d'une image
-    if($_POST['nav'] == 'deleteImage'){
-        
-        $retour = $pres->deletePic($_POST['img'], $_POST['chem']);
-
-        $_SESSION["setOrder_pres"] = serialize($pres);
-        echo json_encode($retour);
-    }
-    
-    //--Ajout d'un nouvel ordre
-    if($_POST['nav'] == 'validOrder'){
-        
-        $retour = $pres->newOrder($_POST['imgId'], $_POST['orderId']);
-
-        $_SESSION["setOrder_pres"] = serialize($pres);
-        echo json_encode($retour);
+        $_SESSION["useradmin_pres"] = serialize($pres);
+        echo json_encode("Ok");
     }
 ?>

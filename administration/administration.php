@@ -68,38 +68,38 @@
 			<div id='div_middle' class='div_middle'>
 				<span id='label_Info' class='label_Info'></span>
                                     
-                                    <a href='../inBuild/inbuild.php'>
-                                        <div id='div_elem_utilisateurs' class='div_elem' title='Cliquez pour accéder à l\'administration des utilisateurs'>
+                                    <a href='../administration/userAdministration/admin_users.php'>
+                                        <div id='div_elem_utilisateurs' class='div_elem' title=\"Cliquez pour accéder à l'administration des utilisateurs\">
                                             <img src='../content/images/comptes_utilisateurs.png'/>
                                             <span>Utilisateurs</span>
                                         </div>
                                     </a>
                                     <a href='../inBuild/inbuild.php'>
-                                        <div id='div_elem_ordre' class='div_elem' title='Cliquez pour accéder à l\'administration des ordres'>
+                                        <div id='div_elem_ordre' class='div_elem' title=\"Cliquez pour accéder à l'administration des ordres\">
                                             <img src='../content/images/ordres.png'/>
                                             <span>Ordres</span>
                                         </div>
                                     </a>
                                     <a href='../inBuild/inbuild.php'>
-                                        <div id='div_elem_taxons' class='div_elem' title='Cliquez pour accéder à l\'administration des taxons'>
+                                        <div id='div_elem_taxons' class='div_elem' title=\"Cliquez pour accéder à l'administration des taxons\">
                                             <img src='../content/images/taxons.jpg'/>
                                             <span>Taxons</span>
                                         </div>
                                     </a>
                                     <a href='../administration/pictureAdministration/admin_pics.php'>
-                                        <div id='div_elem_photos' class='div_elem' title='Cliquez pour accéder à l\'administration des photos'>
+                                        <div id='div_elem_photos' class='div_elem' title=\"Cliquez pour accéder à l'administration des photos\">
                                             <img src='../content/images/camera.png'/>
                                             <span>Photographies</span>
                                         </div>
                                     </a>
                                     <a href='../inBuild/inbuild.php'>
-                                        <div id='div_elem_references' class='div_elem' title='Cliquez pour accéder à l\'administration des références'>
+                                        <div id='div_elem_references' class='div_elem' title=\"Cliquez pour accéder à l'administration des références\">
                                             <img src='../content/images/references.png'/>
                                             <span>Références</span>
                                         </div>
                                     </a>
                                     <a href='../inBuild/inbuild.php'>
-                                        <div id='div_elem_parametres' class='div_elem' title='Cliquez pour accéder à l\'administration des parametres'>
+                                        <div id='div_elem_parametres' class='div_elem' title=\"Cliquez pour accéder à l'administration des parametres\">
                                             <img src='../content/images/parametres.png'/>
                                             <span>Paramètres</span>
                                         </div>

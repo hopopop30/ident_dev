@@ -223,6 +223,48 @@
 			
 			return $retour;
                 }
+                
+                public function updateUserWithActif($id, $login, $email, $nom, $prenom, $site, $dpt, $actif, $admin){
+                    
+                    if($actif == true || $actif == "true"){
+                        $actif = 1;
+                    }else if($actif==false|| $actif == "false"){
+                        $actif = 0;
+                    }
+                    if($admin == true || $admin == "true"){
+                        $admin = 1;
+                    }else if($admin==false|| $admin == "false"){
+                        $admin = 0;
+                    }echo $actif." ".$admin;
+                    //--Connexion � la base
+			$this->DB_acces->connexion();
+			
+                        $sql = "update ".$this->DB_acces->getPrefixTables()."Utilisateur set Nom = '".utf8_decode($nom)."', ".
+                                                                                            "Prenom = '".utf8_decode($prenom)."', ".
+                                                                                            "Login = '".utf8_decode($login)."', ".
+                                                                                            "Email = '".utf8_decode($email)."', ".
+                                                                                            "Site = '".utf8_decode($site)."', ".
+                                                                                            "IdDept = ".$dpt.", ".
+                                                                                            "Actif = ".$actif.", ".
+                                                                                            "Admin = ".$admin." ".
+                                                                                            "where idUtilisateur = ".$id.";";
+                        
+                        //--Ex�cution
+			$req = mysql_query($sql);
+			if($req == '1'){
+				$retour = "Ok";
+                                Log::ajoutLigneBDD($this->userId, "Modification utilisateur", $sql, $this->arborescence);
+			}
+			else {
+                            $retour = "Ko";
+                                Log::ajoutLigneBDD($this->userId, "Erreur Modification utilisateur", $sql, $this->arborescence);
+                        }
+			
+			//--Fermeture de la base
+			$this->DB_acces->deconnexion();
+			
+			return $retour;
+                }
 		
 		//--Valide le compte utilisateur en param
 		public function valideCompte($logMd5, $mdpMd5){
@@ -256,5 +298,69 @@
 			$this->DB_acces->deconnexion();
 			
 			return $retour;
+		}
+                
+                public function getAllUser(){
+			//--Connexion � la base
+			$this->DB_acces->connexion();
+			
+			//--Tableau de retour
+			$retour = array();
+		
+			//--Construction de la requete
+			$sql = "SELECT ut.IdUtilisateur, ut.Login, ut.Nom, ut.Prenom, ut.Email, ut.Site, ut.IdDept, dep.NomDept, ut.DateCreation, ut.DateModif, ".
+					"ut.Actif, ut.Admin, ut.Abonn_RSS, ut.abonn_NewsLetter, ut.Photo, ut.Mdp ".
+					"FROM ".$this->DB_acces->getPrefixTables()."Utilisateur ut ".
+					"INNER JOIN ".$this->DB_acces->getPrefixTables()."ParamDept dep ON dep.IdDept = ut.IdDept ";
+                        
+			//--Ex�cution
+			$req = mysql_query($sql);	
+			
+			//--R�cup�ration et tri
+			while($res = mysql_fetch_array($req, MYSQL_ASSOC)){
+				if($res != null){
+					$retour[] = new User(utf8_encode($res['IdUtilisateur']),
+									utf8_encode($res['Login']),
+									utf8_encode($res['Mdp']),
+									utf8_encode($res['Nom']),
+									utf8_encode($res['Prenom']), 
+									utf8_encode($res['Email']),
+									utf8_encode($res['Site']), 
+									utf8_encode($res['IdDept']),
+									utf8_encode($res['NomDept']),
+									utf8_encode($res['DateCreation']), 
+									utf8_encode($res['DateModif']),
+									utf8_encode($res['Actif']),
+									utf8_encode($res['Admin']), 
+									utf8_encode($res['Abonn_RSS']), 
+									utf8_encode($res['abonn_NewsLetter']), 
+									utf8_encode($res['Photo']));
+				}
+			}
+			
+			//--Fermeture de la base
+			$this->DB_acces->deconnexion();
+			
+			if(!isset($retour)){
+				$retour = "badLog";
+			}
+			//--Retour du tableau
+			return $retour;
+		}
+                
+                //--Valide le compte utilisateur en param
+		public function deleteUser($id){
+			//--Connexion � la base
+			$this->DB_acces->connexion();
+			
+			//--Construction de la requete
+			$sql = "DELETE FROM ".$this->DB_acces->getPrefixTables()."Utilisateur WHERE IdUtilisateur = ".$id." ";
+			
+			//--Ex�cution
+			mysql_query($sql);
+                        Log::ajoutLigneBDD($this->userId, "Suppression utilisateur", $sql, $this->arborescence);	
+			
+			//--Fermeture de la base
+			$this->DB_acces->deconnexion();
 		}
 	}

@@ -7,9 +7,6 @@ Tout tester avec des accents
 
 Erreur dans la table espece avec les "sp."
 -----------------
-version et environnement sur bas de page et dans la BD
-
-Clipping sur les fleches d'identification
 
 
 sur le menu principal, ajouter du texte pour la destination
@@ -24,7 +21,6 @@ Identification:
 -Gérer les notifications sur cette page
 
 Pour les administrateur:
---> Page d'attribution des ordre aux photos sans ordre
 --> Page de visualisation des photos identifiées. --> plus tard
 --> Administration des utilisateurs
 --> Administration des ordres
